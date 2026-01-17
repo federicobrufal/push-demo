@@ -87,6 +87,15 @@
         color: var(--text);
       }
     </style>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+          appId: "b14678a9-011c-445c-aeb7-6f843b3d4721",
+        });
+      });
+    </script>
   </head>
 
   <body>
