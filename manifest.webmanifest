@@ -1,0 +1,16 @@
+{
+  "name": "Helados Daniel",
+  "short_name": "Daniel",
+  "start_url": "/push-demo/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://aglutenados.com.ar/panel/archivosweb/contactos/980/3603630f376f8.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
