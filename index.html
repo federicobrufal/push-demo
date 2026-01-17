@@ -6,64 +6,89 @@
     <title>Helados Daniel – Push Demo</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="https://heladosdaniel.com/wp-content/uploads/2024/09/cropped-fav-32x32.jpg" sizes="32x32">
+    <link
+      rel="icon"
+      href="https://heladosdaniel.com/wp-content/uploads/2024/09/cropped-fav-32x32.jpg"
+      sizes="32x32"
+    >
 
-    <!-- Poppins -->
+    <!-- PWA -->
+    <link rel="manifest" href="/push-demo/manifest.webmanifest">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link
+      rel="apple-touch-icon"
+      href="https://play-lh.googleusercontent.com/t32-9H8SCcAsQmQacJzM6_d8s4auDA_Zv15H11tQxx7ngw_c7ph2EF_2bOF3GNmm_w"
+    >
+
+    <!-- Google Font: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    >
 
     <style>
-      :root{
-        --daniel-magenta:#d63384;
-        --text:#000000;
-        --bg:#ffffff;
+      :root {
+        --daniel-magenta: #d63384;
+        --text: #000000;
+        --bg: #ffffff;
       }
-      html, body { height: 100%; }
-      body{
-        margin:0;
+
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
         background: var(--bg);
         color: var(--text);
         font-family: "Poppins", sans-serif;
       }
-      .wrap{
+
+      .wrap {
         max-width: 720px;
         margin: 0 auto;
         padding: 28px 20px 40px;
       }
-      header{
-        text-align:center;
-        padding: 28px 0 22px; /* padding vertical suficiente */
+
+      header {
+        text-align: center;
+        padding: 32px 0 24px;
       }
-      header img{
+
+      header img {
         max-width: 240px;
         height: auto;
         display: inline-block;
       }
-      h1{
+
+      .card {
+        border: 1px solid #e9e9e9;
+        border-radius: 18px;
+        padding: 20px 18px 22px;
+        background: #ffffff;
+        text-align: center;
+      }
+
+      h1 {
         margin: 6px 0 12px 0;
         font-size: 28px;
         line-height: 1.15;
         font-weight: 700;
         color: var(--daniel-magenta);
-        text-align: center;
       }
-      p{
+
+      p {
         margin: 0 0 10px 0;
         font-size: 16px;
         line-height: 1.45;
         font-weight: 400;
         color: var(--text);
-        text-align: center;
-      }
-      .card{
-        border: 1px solid #e9e9e9;
-        border-radius: 18px;
-        padding: 18px 16px 20px;
-        background: #ffffff;
       }
     </style>
   </head>
+
   <body>
     <div class="wrap">
       <header>
@@ -75,8 +100,8 @@
 
       <div class="card">
         <h1>Push Notifications</h1>
-        <p>Demo para campañas, promociones y novedades de Helados Daniel.</p>
-        <p>Próximo paso: instalar esta app en el iPhone y activar notificaciones.</p>
+        <p>Demo de notificaciones push para campañas, promociones y novedades.</p>
+        <p>Helados Daniel</p>
       </div>
     </div>
   </body>
